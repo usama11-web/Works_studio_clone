@@ -1,0 +1,465 @@
+@font-face {
+  font-family: freight big pro;
+  src: url(/Freight\ Big\ Light.otf);
+}
+@font-face {
+  font-family: AND;
+  src: url(/Radomir\ Tinkov\ -\ Gilroy-Light.otf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "freight big pro";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#loader{
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  background-color: #000000;
+  z-index: 99999;
+}
+#loader h1{
+ position: absolute;
+ z-index: 99999;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ font-size: 7vw;
+ width: 90%;
+ font-weight: 100;
+ line-height: 6vw;
+ /* letter-spacing: -3px; */
+ color: #5f5f5fbc;
+ z-index: 999;
+ text-align: center;
+} 
+#loader video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 99;
+}
+#loader #yellow1{
+  width: 100%;
+  height: 100%;
+  background-color: #f5e41b;
+  z-index: 9999;
+  position: absolute;
+}
+#loader #yellow2{
+  width: 100%;
+  height: 100%;
+  background-color: #f5e41b;
+  z-index: 9;
+  position: absolute;
+}
+
+#page_one {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5e41b;
+  position: relative;
+}
+#upper{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 999;
+  transform: translateY(-100%);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+
+#upper a{
+  text-decoration: none;
+  color: #000000;
+}
+#page_one #upper a h3{
+   font-family: AND;
+   
+
+}
+
+#nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 3vw;
+}
+#nav_sec {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav_sec > div {
+  overflow: hidden;
+  
+}
+#nav_sec > div a h3 {
+  transform: translateX(150%);
+  font-size: 1em;
+  font-family: AND;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+#nav_sec > div a {
+  text-decoration: none;
+  color: #000000;
+  
+}
+
+#nav_sec > div a h3:after {
+  background: none repeat scroll 0 0 rgb(0, 0, 0);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000000a0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0%;
+}
+#nav_sec > div a h3:hover:after {
+  width: 100%;
+  left: 0;
+}
+#nav svg{
+  z-index: 9999;
+  position: relative;
+}
+#square img {
+  width: 25px;
+  cursor: pointer;
+  z-index: 9999;
+  position: relative;
+}
+
+#hero {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+#page_one h1 {
+  width: 100%;
+  font-size: 7vw;
+  font-weight: 100;
+  line-height: 6vw;
+  letter-spacing: -3px;
+  color: #000000;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#page_one h1 span {
+  display: block;
+}
+#link {
+  width: 100%;
+  position: absolute;
+  bottom: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  z-index: 9999;
+}
+#link a h3:after {
+  background: none repeat scroll 0 0 rgb(0, 0, 0);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000000b3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0%;
+}
+#link a h3:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+#link a {
+  text-decoration: none;
+  color: #000000;
+}
+#link a h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: AND;
+  font-weight: 600;
+  position: relative;
+}
+#page_two {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+}
+#elems {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#elems > h1 {
+  z-index: 10;
+  position: relative;
+  font-size: 6vw;
+  font-weight: 100;
+  line-height: 6vw;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#elems > h1:hover {
+  font-style: italic;
+  color: #000000;
+}
+#elems > h1:hover + #moving {
+  opacity: 1;
+}
+#elems > h1:hover + #moving {
+  opacity: 1;
+}
+
+@keyframes text_move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#moving::-webkit-scrollbar {
+  display: none;
+}
+#moving {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  background-color: #f5e41b;
+  opacity: 0;
+  transform: translate() scaleY(0);
+  transition: all ease 1s;
+}
+
+#moving .overlay {
+  width: 20%;
+  background: linear-gradient(
+    90deg,
+    rgb(221, 214, 11) 0%,
+    rgb(205, 223, 8) 35%,
+    rgb(255, 247, 0) 100%
+  );
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  right: 50%;
+  transform: translate(50%);
+  top: 0%;
+}
+#moving #moving_heading {
+  display: inline-block;
+  white-space: nowrap;
+  animation: text_move linear infinite 4s;
+}
+#moving #moving_heading h1 {
+  font-family: AND;
+  display: inline-block;
+  font-size: 1.2vw;
+  padding: 0.5vw 0;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #000000;
+}
+#page_three {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  max-width: 100%;
+  column-gap: 1em;
+  padding: 2em;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.content-wrapper p {
+  padding: 0.5em 0 0 0.5em;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75em;
+  color: white;
+  opacity: 0;
+  text-align: center;
+  transition: all ease 0.5s;
+}
+.overlay h1 {
+  font-size: 5vw;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.overlay div .round-button:nth-child(2) {
+  margin-left: auto;
+  margin-right: 0.7em;
+}
+
+.spheric-button {
+  border-radius: 50px;
+  border: none;
+  padding: 0.5em 01.25em;
+  opacity: 0.8;
+  font-weight: 800;
+}
+
+#page_four {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+#page_four #page4_top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#rap{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#page_four #page4_top h2 {
+  font-size: 2vw;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: AND;
+  margin-top: 2vw;
+}
+#page_four #page4_bottom {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 3vw;
+}
+#page4_bottom #sec {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#page4_bottom a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#page4_bottom h2 {
+  font-family: AND;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+#page4_bottom h2:after {
+  background: none repeat scroll 0 0 rgb(0, 0, 0);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ffffff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0%;
+}
+#page4_bottom h2:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
+

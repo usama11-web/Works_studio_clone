@@ -1,0 +1,136 @@
+@media (max-width: 1050px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .column:last-child {
+    display: none;
+  }
+  #page_one #upper a h3 {
+    font-size: 6vw;
+    margin-right: 4vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .column:nth-child(3) {
+    display: none;
+  }
+  #nav_sec > div a h3 {
+    display: none;
+}
+#page_one #upper a h3 {
+    font-size: 6vw;
+    margin-right: 4vw;
+  }
+  #elems > h1 {
+    font-size: 12vw;
+    line-height: 10vw;
+}
+#moving #moving_heading h1 {
+    font-size: 3vw;
+}
+#page_four {
+    width: 100%;
+    height: 70vh;
+}
+#page_four #page4_top {
+    width: 100%;
+    height: 30%;
+}
+#page_four #page4_top h2 {
+    font-size: 3vw;
+}
+#page_four #page4_bottom {
+    width: 100%;
+    height: 70%;
+}
+#page4_bottom #sec {
+    width: 40%;
+    flex-direction: column;
+    align-items: end;
+}
+#page4_bottom a {
+  margin: 2vw 0;
+}
+
+}
+
+@media (max-width: 550px) {
+    #moving #moving_heading h1 {
+        font-size: 3vw;
+    }
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3em;
+  }
+
+  .column:nth-child(3) {
+    display: flex;
+  }
+
+  .column:last-child {
+    display: flex;
+  }
+  #page_one #upper a h3 {
+    font-size: 10vw;
+    margin: 2vw 2vw;
+    opacity: 0;
+  }
+  #nav {
+    padding-top: 5vh;
+  }
+  #nav_sec > div {
+    display: none;
+  }
+  #nav_sec {
+    width: fit-content;
+  }
+  #page_one h1 {
+    width: 90%;
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+  #link {
+    bottom: 5%;
+  }
+  #elems > h1 {
+    font-size: 11vw;
+    line-height: 9vw;
+    cursor: none;
+  }
+  #page_four {
+    width: 100%;
+    height: 80vh;
+  }
+  #page_four #page4_top {
+    width: 100%;
+    height: 30%;
+  }
+  #page_four #page4_top h2 {
+    font-size: 5vw;
+    font-weight: 800;
+  }
+  #page_four #page4_bottom {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  #page4_bottom #sec {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  #page4_bottom a {
+    margin: 4vw 0;
+  }
+}
